@@ -3,25 +3,17 @@ package CAT;
 public class Cata {
     public Cata(String catName, int catAge) {
     }
-
     public Cata() {
-
     }
-
     String nameOfCata = "BadCat ";
 
     public String getNameOfCata() {
         return nameOfCata;
     }
-
     public void setNameOfCata(String nameOfCata) {
         this.nameOfCata = nameOfCata;
     }
-
-
     public void catMethoda() {
-
-
         int countCat;
         int countAge = 3;
         for (countCat = 1; countCat<=10; countCat++) {
@@ -44,10 +36,6 @@ public class Cata {
             cat = new Cata (catNames [count], catAges[count]);
             System.out.println(catNames[count] + " " + catAges[count]);
             count++;
-
         }
-
-
-
     }
 }
