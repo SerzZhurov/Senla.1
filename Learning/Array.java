@@ -12,11 +12,14 @@ public class Array {
         Scanner input = new Scanner(System.in);
         System.out.println("input array size: ");
         int sz = input.nextInt();
+        int average=0;
+        int sum = 0;
         int i=0;
         int mass[]= new int [sz];
         while (i<sz) {
             double a= (double) Math.random();
             mass[i]= (int) Math.floor(a*100);
+            sum = sum + mass[i];
             i = i+1;}
         // -------------- printing unsorted array ---------------
         for (i=0;i<sz;i++) {
@@ -42,6 +45,9 @@ public class Array {
         System.out.println ();
         for (i=0;i<sz;i++) {
             System.out.print (mass[i]+",");}
+        average = sum / mass.length;
+        System.out.println ();
+        System.out.print("sum of array elements = " + sum + " average = " + average);
     }
 
 
