@@ -13,5 +13,15 @@ package Arrays_and_Strings;
 //        Элементы массива вывести через "_"
 //        7. Вывести на экран первоначальную матрицу.
 
+import java.util.Scanner;
+
 public class Main {
+    private static Arr array;
+
+    public static void main(String[] args) {
+
+        Arr array = new Arr();
+        array.square();
+
+    }
 }
