@@ -17,9 +17,7 @@ public class Main {
     private static Arr array;
 
     public static void main(String[] args) {
-
         Arr array = new Arr();
         array.square();
-
     }
 }
