@@ -28,8 +28,9 @@ public class Arr {
             System.out.println("Array size " + SqAr.length + " x " + SqAr.length);
             for (i = 0; i < SqAr.length; i++) {
                 for (j = 0; j < SqAr.length; j++) {
-
-                    System.out.print(SqAr[i][j] + " ");
+                String print =new StringBuilder().append(SqAr[i][j]).toString();
+                print = print.substring(0,6);
+                System.out.print(print + " ");
                 }
                 System.out.println("");
 
