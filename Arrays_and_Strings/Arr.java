@@ -18,24 +18,18 @@ public class Arr {
         String stringInArray = "";
         String stringChoice = "";
         String string = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
-
-//        for (sc = 0; sc<6; sc++) {
-//            stringChoice = String.valueOf(string.charAt(randSym = (int) (52*(Math.random()))));
-//            stringInArray = stringInArray + stringChoice;
-//        }
-//        System.out.println(stringInArray);
         System.out.println("input array size:");
         int sz = input.nextInt();
         String SqAr[][] = new String[sz][sz];
         for (i = 0; i < SqAr.length; i++) {
             for (j = 0; j < SqAr.length; j++) {
-                if ((i+j)%3 == 0) {
-                    for (sc = 0; sc<6; sc++) {
-                        stringInArray = "";
+                for (sc = 0; sc<6; sc++) {
                     stringChoice = String.valueOf(string.charAt(randSym = (int) (52*(Math.random()))));
                     stringInArray = stringInArray + stringChoice;
-                                            }
+                }
+                if ((i+j)%3 == 0) {
                     SqAr[i][j] = stringInArray;
+                    stringInArray = "";
                     } else {
                     double result = 10 * (double) Math.random();
                     SqAr[i][j] = String.valueOf(result);
