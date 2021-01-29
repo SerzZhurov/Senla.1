@@ -11,17 +11,36 @@ public class Arr {
 
     public void square() {
         Scanner input = new Scanner(System.in);
-        System.out.println("input array size:");
-        int sz = input.nextInt();
         int i = 0;
         int j = 0;
-        double SqAr[][] = new double[sz][sz];
+        int sc;
+        int randSym;
+        String stringInArray = "";
+        String stringChoice = "";
+        String string = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
+
+//        for (sc = 0; sc<6; sc++) {
+//            stringChoice = String.valueOf(string.charAt(randSym = (int) (52*(Math.random()))));
+//            stringInArray = stringInArray + stringChoice;
+//        }
+//        System.out.println(stringInArray);
+        System.out.println("input array size:");
+        int sz = input.nextInt();
+        String SqAr[][] = new String[sz][sz];
         for (i = 0; i < SqAr.length; i++) {
             for (j = 0; j < SqAr.length; j++) {
-                double result = 10 * (double) Math.random();
-                //result = (int)Math.floor(result);
-                //result = result/10000;
-                SqAr[i][j] = result;
+                if ((i+j)%3 == 0) {
+                    for (sc = 0; sc<6; sc++) {
+                        stringInArray = "";
+                    stringChoice = String.valueOf(string.charAt(randSym = (int) (52*(Math.random()))));
+                    stringInArray = stringInArray + stringChoice;
+                                            }
+                    SqAr[i][j] = stringInArray;
+                    } else {
+                    double result = 10 * (double) Math.random();
+                    SqAr[i][j] = String.valueOf(result);
+                            }
+
             }
         }
 
