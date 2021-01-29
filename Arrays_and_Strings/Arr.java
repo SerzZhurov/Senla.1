@@ -26,18 +26,17 @@ public class Arr {
                 for (sc = 0; sc<6; sc++) {
                     stringChoice = String.valueOf(string.charAt(randSym = (int) (52*(Math.random()))));
                     stringInArray = stringInArray + stringChoice;
-                }
-                if ((i+j)%3 == 0) {
+                                        }
+                if ((i+j)%3 != 0) {
                     SqAr[i][j] = stringInArray;
                     stringInArray = "";
-                    } else {
+                                }
+                else {
                     double result = 10 * (double) Math.random();
                     SqAr[i][j] = String.valueOf(result);
                             }
-
-            }
-        }
-
+                                            }
+                                             }
             System.out.println("Array size " + SqAr.length + " x " + SqAr.length);
             for (i = 0; i < SqAr.length; i++) {
                 for (j = 0; j < SqAr.length; j++) {
@@ -46,9 +45,7 @@ public class Arr {
                 System.out.print(print + " ");
                 }
                 System.out.println("");
-
-
-            }
+                                            }
 
         }
     }
