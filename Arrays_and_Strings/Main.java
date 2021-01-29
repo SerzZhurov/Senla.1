@@ -14,8 +14,6 @@ package Arrays_and_Strings;
 //        7. Вывести на экран первоначальную матрицу.
 
 public class Main {
-    private static Arr array;
-
     public static void main(String[] args) {
         Arr array = new Arr();
         array.square();
