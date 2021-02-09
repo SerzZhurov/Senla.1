@@ -4,15 +4,15 @@ import java.io.InputStream;
 import java.util.Scanner;
 
 class Counter {
-    int a;
-    int b;
+    double a;
+    double b;
 
-   int counterAddition() {
-       int ad = a + b;
+   double counterAddition() {
+       double ad = a + b;
        return ad;
     }
-    int counterSubtraction(){
-       int st = a-b;
+    double counterSubtraction(){
+       double st = a-b;
        return st;
     }
     double counterDivision () {

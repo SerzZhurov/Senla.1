@@ -5,19 +5,20 @@ import java.util.*;
 
 public class Main  {
         public static void main(String[] args) {
-            Scanner input = new Scanner(System.in);
+            Scanner scanner = new Scanner(System.in);
 
             Counter SADM = new Counter();
 
             System.out.println("input first number: " );
-            SADM.a = input.nextInt();
+            double a = scanner.nextInt();
+            SADM.a = a;
             System.out.println("input second number: " );
-            SADM.b = input.nextInt();
+            SADM.b = scanner.nextInt();
 
-            int resultAddition = SADM.counterAddition();
+            double resultAddition = SADM.counterAddition();
             System.out.println(resultAddition);
 
-            int resultSubtraction = SADM.counterSubtraction();
+            double resultSubtraction = SADM.counterSubtraction();
             System.out.println(resultSubtraction);
 
             double resultDivision = SADM.counterDivision();
