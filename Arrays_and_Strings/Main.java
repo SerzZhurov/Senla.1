@@ -15,8 +15,19 @@ package Arrays_and_Strings;
 
 public class Main {
     public static void main(String[] args) {
-        Arr array = new Arr();
-        array.square();
+
+        Arr buildArray = new Arr();
+        buildArray.square();
+
+//        Arr buildDiag = new Arr();
+//        buildDiag.getMainDiag();
+
+
+
+
+
+
+
 
 
     }

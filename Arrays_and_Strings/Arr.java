@@ -1,23 +1,16 @@
 package Arrays_and_Strings;
 
-import Learning.Array;
-
 import java.util.Scanner;
 
 
-public class Arr {
+class Arr {
+    int i;
+    int j;
+    int sc;
+    int randSym;
 
-    @Override
-    public String toString() {
-        return "Arr{}";
-    }
-
-    public void square() {
+    String[][] square() {
         Scanner input = new Scanner(System.in);
-        int i = 0;
-        int j = 0;
-        int sc;
-        int randSym;
         String stringInArray = "";
         String stringChoice = "";
         String string = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
@@ -48,6 +41,18 @@ public class Arr {
             }
             System.out.println("");
         }
-        return;
+        return square();
     }
+
+//    void getMainDiag() {
+//        i = 0;
+//        j = 0;
+//        String DiagSqAr[][] = square();
+//        for (i = 0; i < DiagSqAr.length; i++) {
+//            System.out.println(DiagSqAr[i][i]);
+//            System.out.print(" ");
+//        }
+//
+//    }
 }
+
