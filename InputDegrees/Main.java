@@ -9,7 +9,11 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String FirstAngle = scanner.nextLine();
         String SecondAngle = scanner.nextLine();
-        System.out.println(FirstAngle + SecondAngle);
+        FirstAngle = FirstAngle.replaceAll(",",".");
+        SecondAngle = SecondAngle.replaceAll(",",".");
+        Double a = Double.parseDouble(FirstAngle);
+        Double b = Double.parseDouble(SecondAngle);
+        System.out.println(a+b);
 
 
     }
