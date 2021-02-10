@@ -11,9 +11,15 @@ public class Main {
         String SecondAngle = scanner.nextLine();
         FirstAngle = FirstAngle.replaceAll(",",".");
         SecondAngle = SecondAngle.replaceAll(",",".");
-        Double a = Double.parseDouble(FirstAngle);
-        Double b = Double.parseDouble(SecondAngle);
-        System.out.println(a+b);
+        Double FirstAngleNumber = Double.parseDouble(FirstAngle);
+        Double SecondAngleNumber = Double.parseDouble(SecondAngle);
+        Double DegMinSec = FirstAngleNumber + SecondAngleNumber;
+        int Deg = DegMinSec.intValue();
+        double MinSec = (DegMinSec - Deg)/60;
+        int Min = (int) MinSec;
+        double SecDec = (MinSec-Min)/60;
+        System.out.println("Angl: " + Deg + "-" + Min + "-" + SecDec);
+
 
 
     }
