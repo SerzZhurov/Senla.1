@@ -1,4 +1,4 @@
 package List;
 
-public class Listiterator {
+public interface Listiterator {
 }
