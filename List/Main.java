@@ -48,12 +48,25 @@ int i;
 //---------------------------------------------------------------------------------------
 
         ArrayList <String> arrayList = new ArrayList<>();
+        String CommonString = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
+        String stringInArray = "";
+        String stringChoice = "";
+        int sc;
+        int randSym;
+        System.out.println("-----------------------------------------------------------------");
             System.out.println(arrayList);
             System.out.println(arrayList.size());
-            String string = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
+        for (int j = 0; j < 10; j++) {
 
-            arrayList.add()
-
+            for (sc = 0; sc < 6; sc++) {
+                stringChoice = String.valueOf(CommonString.charAt(randSym = (int) (52 * (Math.random()))));
+                stringInArray = stringInArray + stringChoice;
+            }
+            arrayList.add(j, stringInArray);
+            stringInArray = "";
+            stringChoice = "";
+        }
+        System.out.println(arrayList);
 
 
     }
