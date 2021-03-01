@@ -47,6 +47,12 @@ int i;
             System.out.println(arlTest.subList(5,15));
 //---------------------------------------------------------------------------------------
 
+        ArrayList <String> arrayList = new ArrayList<>();
+            System.out.println(arrayList);
+            System.out.println(arrayList.size());
+            String string = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
+
+            arrayList.add()
 
 
 
