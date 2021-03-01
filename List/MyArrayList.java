@@ -56,6 +56,7 @@ public class MyArrayList<E> implements MyList<E> {
 
     public void ArrayList() {
 
+
     }
 
     public void ArrayList(Collection<? extends E> col) {
